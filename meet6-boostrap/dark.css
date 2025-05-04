@@ -1,0 +1,112 @@
+:root{
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: "Poppins", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mode Light & Dark */
+body{
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+header, section{
+  padding: 70px min(50px, 7%);
+}
+
+/* Mode Light */
+section{
+  background-color: var(--base-variant);
+}
+
+/* Tulisan Mode Dark */
+p{
+  color: var(--secondary-text);
+}
+
+/* Mode Dark */
+button{
+  border: none;
+  padding: .8em 2em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Model Light */
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+  border: var(--text-color) solid 2px;
+}
+
+/* Warna Icon */
+#theme-switch svg{
+  fill: var(--text-color);
+}
+#theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+
+/* .scroll-up{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  z-index: 1000;
+  border: var(--text-color) solid 2px;
+}
+
+.scroll-up svg{
+  fill: var(--text-color);
+} */
+
+.form {
+  width: 100%;
+}
